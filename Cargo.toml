@@ -2,6 +2,12 @@
 name = "draw_box"
 version = "0.1.0"
 edition = "2021"
+authors = ["Sven Ponelat"]
+license = "MIT"
+description = "Names for box drawing elements."
+repository = "https://github.com/svencp/draw_box"
+keywords = ["drawing","box"]
+categories = ["command-line-interface"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

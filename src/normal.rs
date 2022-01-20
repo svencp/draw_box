@@ -1,9 +1,4 @@
 
-
-
-
-
-
 /// Horizontal
 pub const H:&str="─";
 
@@ -36,3 +31,6 @@ pub const TU:&str="┴";
 
 /// Cross symbol
 pub const CR:&str="┼";
+
+/// Empty
+pub const E:&str=" ";
