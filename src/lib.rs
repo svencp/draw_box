@@ -1,52 +1,54 @@
-//! const STYLE: Style = Style::Doubled;        
-//! let mut str1: String = String::new();
-//! 
-//! let corner1 = Char::upper_left(STYLE);
-//! let hor = Char::horizontal(STYLE);
-//! let td = Char::t_down(STYLE);
-//! let corner2 = Char::upper_right(STYLE);
-//! let tl = Char::t_left(STYLE);
-//! let corner3 = Char::lower_right(STYLE);
-//! let tu = Char::t_up(STYLE);
-//! let corner4 = Char::lower_left(STYLE);
-//! let tr = Char::t_right(STYLE);
-//! let cross = Char::cross(STYLE);
-//! 
-//! 
-//! str1.push_str(&corner1);
-//! str1.push_str(&hor);
-//! str1.push_str(&td);
-//! str1.push_str(&hor);
-//! str1.push_str(&corner2);
-//! str1.push_str("\n");
-//! str1.push_str(&tr);
-//! str1.push_str(&hor);
-//! str1.push_str(&cross);
-//! str1.push_str(&hor);
-//! str1.push_str(&tl);
-//! str1.push_str("\n");
-//! str1.push_str(&corner4);
-//! str1.push_str(&hor);
-//! str1.push_str(&tu);
-//! str1.push_str(&hor);
-//! str1.push_str(&corner3);
-//! 
-//! println!("{}",str1);
-//! 
-//! let target = format!("{}{}{}{}{}\n{}{}{}{}{}\n{}{}{}{}{}",
-//! &corner1, &hor, &td, &hor, &corner2, 
-//! &tr, &hor, &cross, &hor, &tl,
-//! &corner4, &hor, tu, &hor, &corner3  );
-//! 
-//! println!("{}",target);
-//! 
-//! assert_eq!(target, "
-//! ╔═╦═╗
-//! ╠═╬═╣
-//! ╚═╩═╝
-//! ".trim());
-//! 
-//! 
+/// # Examples
+/// '''
+/// const STYLE: Style = Style::Doubled;        
+/// let mut str1: String = String::new();
+/// 
+/// let corner1 = Char::upper_left(STYLE);
+/// let hor = Char::horizontal(STYLE);
+/// let td = Char::t_down(STYLE);
+/// let corner2 = Char::upper_right(STYLE);
+/// let tl = Char::t_left(STYLE);
+/// let corner3 = Char::lower_right(STYLE);
+/// let tu = Char::t_up(STYLE);
+/// let corner4 = Char::lower_left(STYLE);
+/// let tr = Char::t_right(STYLE);
+/// let cross = Char::cross(STYLE);
+/// 
+/// 
+/// str1.push_str(&corner1);
+/// str1.push_str(&hor);
+/// str1.push_str(&td);
+/// str1.push_str(&hor);
+/// str1.push_str(&corner2);
+/// str1.push_str("\n");
+/// str1.push_str(&tr);
+/// str1.push_str(&hor);
+/// str1.push_str(&cross);
+/// str1.push_str(&hor);
+/// str1.push_str(&tl);
+/// str1.push_str("\n");
+/// str1.push_str(&corner4);
+/// str1.push_str(&hor);
+/// str1.push_str(&tu);
+/// str1.push_str(&hor);
+/// str1.push_str(&corner3);
+/// 
+/// println!("{}",str1);
+/// 
+/// let target = format!("{}{}{}{}{}\n{}{}{}{}{}\n{}{}{}{}{}",
+/// &corner1, &hor, &td, &hor, &corner2, 
+/// &tr, &hor, &cross, &hor, &tl,
+/// &corner4, &hor, tu, &hor, &corner3  );
+/// 
+/// println!("{}",target);
+/// 
+/// assert_eq!(target, "
+/// ╔═╦═╗
+/// ╠═╬═╣
+/// ╚═╩═╝
+/// ".trim());
+/// 
+/// 
 
 
 use std::fmt;
